@@ -8,6 +8,7 @@
 4. `c`(ipa /t͡sʰ/) 及 `z` (ipa /t͡s/) 及 `s` 可以喺 `oe` `eo` `yu` 前輸入爲 `ch` 及 `zh` 及 `sh`
 
 同時提供ipa嘅strict版本，刪去 `eo` `oe` 不分、 `j` `y` 不分等模糊
+
 再提供ipa嘅customized版本，`q` 不作 /ʔ/ 而作 `aa`
 
 ## License & Attribution
