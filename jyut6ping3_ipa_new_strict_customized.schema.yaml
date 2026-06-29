@@ -520,8 +520,9 @@ schema:
     允許字首ng/∅不分
     吳，五等字可拼作m
     c/z/s 喺 oe/eo/yu 前可作 ch/zh/sh
+    q 作 aa
   name: "粵拼（IPA版）"
-  schema_id: jyut6ping3_ipa_new
+  schema_id: jyut6ping3_ipa_new_strict_customized
   version: 2021.04.02
 speller:
   algebra:
@@ -533,15 +534,11 @@ speller:
     - "derive/^z([oe|eo|yu])/zh$1/"
     - "derive/^s([oe|eo|yu])/sh$1/"
 
-    - "derive/^([aeiou])/q$1/"
-    - "derive/^jy?([aeiou])/y$1/"
-    - "derive/^jyu/ju/"
+    - "derive/aa/q/"
+
     - "derive/yu(?!ng|k)/y/"
     - "derive/(g|k)u(?!ng|k)/$1wu/"
     - "derive/eoi(?=\\d)/eoy/"
-    - "derive/eo/oe/"
-    - "derive/oe/eo/"
-    - "derive/aa(?=\\d)/a/"
     - "derive/\\d//"
     - "abbrev/^([a-z]).+$/$1/"
     - "xform/1/v/"
@@ -585,6 +582,8 @@ translator:
     - "xform/ch/ʦ̠ʰ/"
     - "xform/zh/ʦ̠/"
     - "xform/sh/s̠/"
+    
+    - "xform/q/aa/"
 
     - "xform/ng/ŋ/"
     - "xform/^| |'/,/"
@@ -609,7 +608,6 @@ translator:
     - "xform/([ːɐoɵe][iu])ː/$1̯/"
     - "xform/[ːɐoɵe][ptdk]/$&̚/"
     - "xform/,([ptc]|kw?)/$&ʰ/"
-    - "xform/,q/,ʔ/"
     - "xform/[kg]w/kʷ/"
     - "xform/c|z/ʦ/"
     - "xlit/bdg/ptk/"

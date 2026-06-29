@@ -515,8 +515,9 @@ schema:
     Telegram 用户交流組 https://t.me/rime_cantonese
 
     允許字首n/l不分
-　　允許字首ng/∅不分
-　　吳，五等字可拼作m
+    允許字首ng/∅不分
+    吳，五等字可拼作m
+    c/z/s 喺 oe/eo/yu 前可作 ch/zh/sh
   name: "粵拼"
   schema_id: jyut6ping3_new
   version: 2024.12.01
@@ -525,7 +526,10 @@ speller:
     - "derive/^ng/m/"
     - "derive/^nga/a/"
     - "derive/^ngo/o/"
-　　- derive/^n(?!g)/l/
+    - "derive/^n(?!g)/l/"
+    - "derive/^c([oe|eo|yu])/ch$1/"
+    - "derive/^z([oe|eo|yu])/zh$1/"
+    - "derive/^s([oe|eo|yu])/sh$1/"
 
     - "derive/^([aeiou])/q$1/"
     - "derive/^jy?([aeiou])/y$1/"
