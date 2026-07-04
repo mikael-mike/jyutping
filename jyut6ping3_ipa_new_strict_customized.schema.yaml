@@ -521,6 +521,7 @@ schema:
     吳，五等字可拼作m
     c/z/s 喺 oe/eo/yu 前可作 ch/zh/sh
     q 作 aa
+    gw kw 與 g k 不分
   name: "粵拼（IPA版）"
   schema_id: jyut6ping3_ipa_new_strict_customized
   version: 2021.04.02
@@ -533,6 +534,7 @@ speller:
     - "derive/^c([oe|eo|yu])/ch$1/"
     - "derive/^z([oe|eo|yu])/zh$1/"
     - "derive/^s([oe|eo|yu])/sh$1/"
+    - "derive/^(g|k)w/$1/"
 
     - "derive/aa/q/"
 

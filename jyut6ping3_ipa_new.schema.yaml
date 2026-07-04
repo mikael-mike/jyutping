@@ -532,6 +532,8 @@ speller:
     - "derive/^c([oe|eo|yu])/ch$1/"
     - "derive/^z([oe|eo|yu])/zh$1/"
     - "derive/^s([oe|eo|yu])/sh$1/"
+    - "derive/^(g|k)w/$1/"
+
 
     - "derive/^([aeiou])/q$1/"
     - "derive/^jy?([aeiou])/y$1/"
